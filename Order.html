@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!--HTML5 doctype-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> <!--This is HTML5 charset -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Registration Form</title>
+			<link	rel="stylesheet"  href="../css/external.css">
+			<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+	</head>
+<body>
+<div class="page3Container">
+	<nav class="navLinks3">
+		<div class=divLinks2>
+			<a class="a3-1" href = "../Home.html"> Home</a>
+			<a class="a3-2" href = "AvailableCakes.html"> Available Cakes</a>
+			<a class="a3-3" href ="Order.html"> Order</a>
+		</div>
+	</nav>
+	<div class="logoDesign3">
+		<a href ="../Home.html">
+			<img class="page3Logo" src="../images/logo1.svg" alt = "this is the logo picture">
+		</a>
+<!--This is a logo picture-->
+	</div>
+
+	<div class="sloganDesign3">
+		<p class="page3Slogan">A lice if love</p>
+<!--This is a comment on my paragraph 1-->
+	</div>
+	<div class="divForm">
+		<h1 class=headForm >Cake order form</h1>
+<!--This is heading 1 -->
+		<form class="Form">
+<!-- Input elements goes here -->
+			<label for="name">Your name*</label><br> 
+			<input type="text" id="name" name="name" minlength="3" maxlength="20" required>
+			<P id="error">Your name must be at least 3 characters long </p>
+
+			<label for="phoneNumber">Your phone number* (it should be exactly 10 characters)</label><br> 
+			<input type="tel" id="phoneNumber" name="phoneNumber" minlength="10" maxlength="10" required>
+
+			<label for="email">Your email</label><br> 
+			<input type="email" id="email" name="email" required>
+			<p id="emailError">Please enter a valid email address</p>
+
+			<label>How would you like us to contact you?</label><br> 
+			<input type="radio" id="radiobutton" name="Contact" value="Phone">Phone
+			<input type="radio" id="radiobutton2" name="Contact" value="Email">Email<br>
+			
+			<label>Your desired cake</label>
+			<select>
+				<option>Birthday cake</option>
+				<option>Wedding cake</option>
+				<option>Baby shower cake</option>
+				<option>Anniversary cake</option>
+				<option>Others</option>
+			</select><br> 
+
+			<label for="comment">Would you like to share your thoughts and comments</label><br>
+        	<textarea id="comment" name="comment" ></textarea><br> 
+
+			<label> 
+			I agree to your terms and conditions: <input type="checkbox" > 
+			</label><br>
+
+			<label>
+			I would like to receive information about your new product promotions<input type="checkbox" name="subscribe" value="yes">  
+			</label>
+			
+			<input type="submit" id="submit" value="Submit">
+		</form>
+	</div>
+
+	<div class="myfooter3">
+<!-- Footer -->
+		<footer class=footer3>
+    	    <p class="copyright">All rights reserved© XMLWC</p>
+   		</footer>
+	</div>
+</div>
+</body>
+</html>
